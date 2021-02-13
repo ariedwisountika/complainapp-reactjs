@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./InformasiData.css";
 import axios from "axios";
 // import { Button } from "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
+import { Navbar, Nav, Dropdown } from "react-bootstrap";
 
 class InformasiData extends Component {
   constructor(props) {
@@ -48,7 +51,12 @@ class InformasiData extends Component {
               // skip the first element since it's already used above
               return (
                 <tr key={index.toString()}>
-                  <td>{user.name}</td>
+                  <td>
+                    {/* <Link to={`/data_pelapor/${user._id}`}>{user.name}</Link> */}
+                    <Nav.Link href={`/data_pelapor/${user._id}`}>
+                      {user.name}
+                    </Nav.Link>
+                  </td>
                   <td>{user.email}</td>
                   <td>{user.topic}</td>
                   {/* <td>{</td> */}

@@ -9,6 +9,7 @@ import Home from "./Home/Home";
 import history from "./history";
 import InformasiData from "./InformasiData/InformasiData";
 import InformasiStatus from "./InformasiData/InformasiStatusPelaporan";
+import DetailPelapor from "./InformasiData/DetailPelapor";
 
 export default class Routes extends Component {
   render() {
@@ -22,6 +23,7 @@ export default class Routes extends Component {
           <Route path="/FormData2" component={FormData2} />
           <Route path="/InformasiData" component={InformasiData} />
           <Route path="/InformasiStatus" component={InformasiStatus} />
+          <Route path="/data_pelapor/:idx" component={DetailPelapor} />
         </Switch>
       </Router>
     );
