@@ -7,7 +7,7 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 const Navigation = (props) => {
   console.log(props);
   return (
-    <Navbar bg="primary" variant="dark">
+    <Navbar bg="primary" variant="dark" className="navi">
       <Navbar.Brand href="#home">ADMIN PENGADUAN</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

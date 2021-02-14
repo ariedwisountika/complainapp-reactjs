@@ -212,7 +212,7 @@ class Chatbot extends Component {
             </Grid>
             <Grid item xs={3}>
               <Button type="submit" form="message" onClick={this.onSubmit}>
-                SEND
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6jLUES8RpGaZQu7e-3CjFsVQcEGm1JcNNFw&usqp=CAU" width="50" height="40"></img>
               </Button>
             </Grid>
           </Grid>

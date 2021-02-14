@@ -30,6 +30,8 @@ const useStyles = makeStyles({
     margin: 10,
     color: "#fff",
     backgroundColor: deepOrange[500],
+    width:60,
+    height:30
   },
 
   chatClose: {
@@ -75,7 +77,7 @@ const Chatbox = () => {
         aria-labelledby="scroll-dialog-title"
       >
         <DialogTitle id="scroll-dialog-title">
-          <FontAwesomeIcon icon={faCommentDots}></FontAwesomeIcon>Complaine app
+          <FontAwesomeIcon icon={faCommentDots}></FontAwesomeIcon>ChatBox
         </DialogTitle>
         <DialogContent>
           <Chatbot></Chatbot>
